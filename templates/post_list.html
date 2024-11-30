@@ -9,8 +9,10 @@
     <h1>Blog Nov</h1>
     <ul>
         {% for item in post_list %}
-            <li>{{ item.title }}</li>
-        {%  endfor %}
+            <li>
+                <a href="{% url 'post-detail' item.pk %}">{{ item.title }}</a>
+            </li>
+        {% endfor %}
     </ul>
 </body>
 </html>
