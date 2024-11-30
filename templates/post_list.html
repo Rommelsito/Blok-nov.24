@@ -1,6 +1,10 @@
 {% extends "_base.html" %}
 
 {% block content %}
+
+<button>
+    <a href="{% url 'post-new' %}">Crear post</a>
+</button>
 <ul>
     {% for item in post_list %}
         <li>
@@ -8,4 +12,5 @@
         </li>
     {% endfor %}
 </ul>
+
 {% endblock content %}
