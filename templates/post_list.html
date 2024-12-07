@@ -2,9 +2,11 @@
 
 {% block content %}
 
-<button>
-    <a href="{% url 'post-new' %}">Crear post</a>
-</button>
+
+<a href="{% url 'post-new' %}">
+    <button>Crear post</button>
+</a>
+
 <ul>
     {% for item in post_list %}
         <li>
