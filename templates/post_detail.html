@@ -6,12 +6,16 @@
     <p>{{post.author}}</p>
     <p>{{post.content}}</p>
 
-    <button type="button">
-        <a href="{% url 'post-update' post.pk %}">Update view</a>
-    </button> 
-
-    <button type="button">
-        <a href="{% url 'post-delete' post.pk %}">Delete view</a>
-    </button> 
+    <a href="{% url 'post-update' post.pk %}">
+        <button type="button">
+            Update view
+        </button>
+    </a>
     
+    <a href="{% url 'post-delete' post.pk %}">
+        <button type="button">
+            Delete View
+        </button>
+    </a>
+
 {% endblock content %}

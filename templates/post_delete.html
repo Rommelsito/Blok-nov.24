@@ -7,9 +7,12 @@
     <p>Seguro de eliminar este post?</p>
 
     <input type="submit" value="Delete">
-    <button>
-        <a href="{% url 'post-detail' post.pk %}">No</a>
-    </button>
+
+        <a href="{% url 'post-detail' post.pk %}">
+            <button>
+                No
+            </button>
+        </a>
 
 </form>
 
